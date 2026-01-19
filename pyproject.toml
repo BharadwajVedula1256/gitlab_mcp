@@ -1,0 +1,15 @@
+[project]
+name = "gitlab-fastmcp"
+version = "0.1.0"
+description = "A FastMCP server providing comprehensive GitLab API tools for AI assistants"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = ["mcp", "gitlab", "fastmcp", "ai", "tools"]
+dependencies = [
+    "fastmcp>=2.12.4",
+    "httpx>=0.27.0",
+]
+
+[project.scripts]
+gitlab-mcp = "server.gitlab_server:main"
